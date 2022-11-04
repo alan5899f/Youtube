@@ -1,0 +1,24 @@
+PODS:
+  - Nuke (10.7.1)
+  - PKHUD (5.3.0)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Nuke
+  - PKHUD
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+    - PKHUD
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: f8ef6a41c7db674515672498cd56e9a4db00346d
+
+COCOAPODS: 1.10.1

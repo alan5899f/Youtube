@@ -1,0 +1,302 @@
+{\rtf1\ansi\ansicpg950\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset136 STSongti-TC-Bold;\f1\froman\fcharset0 Times-Bold;\f2\fnil\fcharset136 STSongti-TC-Regular;
+\f3\froman\fcharset0 Times-Roman;\f4\fmodern\fcharset0 Courier-Bold;\f5\fmodern\fcharset0 Courier;
+\f6\fnil\fcharset136 PingFangTC-Regular;\f7\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'bc\'d2\'a5\'e9
+\f1 Youtube App + 
+\f0 \'a7\'ec\'a8\'fa
+\f1 \'a0api\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 \'a4\'6a\'ae\'61\'a6\'6e\'a7\'da\'ac\'4f\'aa\'fc\'d8\'70\'a1\'41\'a6\'5d\'c0\'b3\'a5\'bb\'a4\'48\'a4\'a3\'a4\'5b\'a4\'a7\'ab\'65\'ac\'56\'ac\'cc\'a4\'46\'a9\'d2\'a5\'48\'a4\'a7\'ab\'65\'b3\'a3\'a8\'53\'a6\'b3\'a7\'f3\'b7\'73\'a1\'41\'a6\'fd\'ac\'4f\'c1\'f6\'b5\'4d\'ac\'56\'ac\'cc\'a6\'fd\'c1\'d9\'ac\'4f\'a9\'e8\'be\'d7\'a4\'a3\'a6\'ed\'a7\'da\'a5\'b4
+\f3 Code
+\f2 \'aa\'ba\'bc\'dd\'a4\'4f\'a1\'41\'a9\'d2\'a5\'48\'a6\'62\'b9\'6a\'c2\'f7\'b4\'c1\'b6\'a1\'a1\'41\'aa\'fc\'d8\'70\'b4\'4e\'a8\'d3\'b7\'51\'bc\'d2\'a5\'e9\'ac\'dd\'ac\'dd
+\f3 Youtube
+\f2 \'aa\'ba
+\f3 App
+\f2 \'a1\'41\'c5\'fd\'a7\'da\'ad\'cc\'ac\'dd\'ac\'dd\'a7\'61
+\f3 ~\
+
+\f2 \'a5\'fd\'a8\'d3\'a4\'b6\'b2\'d0\'ac\'5b\'ba\'63\'b8\'ea\'ae\'c6\'ab\'ac\'ba\'41\'b0\'f2\'a5\'bb\'a4\'57\'b3\'a3\'ac\'4f\'a7\'51\'a5\'ce
+\f3 TableView
+\f2 \'a9\'ce\'b5\'db
+\f3 ColletionView
+\f2 \'a5\'b4\'b3\'79\'a1\'41\'b8\'ea\'ae\'c6\'b3\'a1\'a5\'f7\'ac\'4f\'a7\'51\'a5\'ce
+\f3 Api
+\f2 \'a6\'ea\'b1\'b5\'a1\'41\'b0\'d1\'a6\'d2\'a5\'48\'a4\'55\'b8\'ea\'ae\'c6
+\f3 :\
+https://developers.google.com/youtube/v3/docs/search/list\
+https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84%E8%A9%A6%E7%85%89-%E5%8B%87%E8%80%85%E7%9A%84-100-%E9%81%93-swift-ios-app-%E8%AC%8E%E9%A1%8C/101-%E4%BD%BF%E7%94%A8-youtube-data-api-%E6%8A%93%E5%8F%96%E6%9C%89%E8%B6%A3%E7%9A%84-youtuber-%E5%BD%B1%E7%89%87-mv-d05c3a0c70aa\
+Api
+\f2 \'a4\'b6\'b2\'d0
+\f3 :
+\f2 \'a7\'da\'ad\'cc\'a5\'fd\'a7\'e2\'a9\'d2\'c0\'f2\'a8\'fa\'aa\'ba
+\f3 ApiKey
+\f2 \'a4\'ce\'a9\'d2\'a6\'b3\'ad\'6e\'a5\'ce\'a8\'ec\'aa\'ba
+\f3 url
+\f2 \'b5\'b9\'a5\'4c\'a9\'77\'b8\'71\'ac\'b0
+\f3 Constants\
+
+\f2 \'b0\'a3\'a4\'46
+\f3  youtubeAPI_KEY (
+\f2 \'b6\'b7\'a6\'db\'a6\'e6\'ab\'4f\'a6\'73\'a6\'6e
+\f3 )
+\f2 \'a5\'48\'a5\'7e\'a8\'e4\'a5\'4c\'aa\'ba\'c0\'b3\'b8\'d3\'b3\'a3\'ac\'4f\'ae\'74\'a4\'a3\'a6\'68
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 struct
+\f5\b0  Constants \{\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubeAPI_KEY = "
+\f6 \'a6\'db\'a4\'76\'aa\'ba
+\f5 Key"\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubeChannelURL = "https://youtube.googleapis.com/youtube/v3/channels"\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubeBaseURL = "https://youtube.googleapis.com/youtube/v3/search?"\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubePlaylistURL = "https://www.googleapis.com/youtube/v3/playlistItems"\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubeCommentURL = "https://www.googleapis.com/youtube/v3/commentThreads"\
+
+\f4\b static
+\f5\b0  
+\f4\b let
+\f5\b0  youtubeVideosURL = "https://www.googleapis.com/youtube/v3/videos"\
+\}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'a6\'41\'a8\'d3\'b4\'4e\'ac\'4f\'bf\'e9\'a5\'58\'b8\'ea\'ae\'c6\'a1\'41\'c4\'b4\'a6\'70\'c1\'7c\'a4\'57\'ad\'b1\'aa\'ba\'a4\'40\'ad\'d3\'a8\'d2\'a4\'6c\'a7\'da\'b7\'51\'ad\'6e\'c0\'f2\'a8\'fa\'b3\'cc\'b7\'73\'b3\'cc\'bc\'f6\'aa\'f9\'aa\'ba\'bc\'76\'a4\'f9
+\f3 20
+\f2 \'ad\'d3\'aa\'ba\'b8\'dc\'a1\'41\'a7\'da\'ad\'cc\'a5\'69\'a5\'48\'b3\'6f\'bc\'cb\'a9\'77\'b8\'71\'a8\'e7\'bc\'c6\'a1\'47
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 guard
+\f5\b0  
+\f4\b let
+\f5\b0  url = URL(string: "\\(Constants.youtubeVideosURL)?part=snippet,statistics&chart=mostPopular&key=\\(Constants.youtubeAPI_KEY)&maxResults=\\(resultMax)") 
+\f4\b else
+\f5\b0  \{
+\f4\b return
+\f5\b0 \}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f3\fs24 \cf0 \strokec2 snippet
+\f7 \uc0\u8202 
+\f3 \'97
+\f7 \uc0\u8202 
+\f2 \'bc\'76\'a4\'f9\'a4\'6a\'b3\'a1\'a4\'c0\'aa\'ba\'b8\'ea\'b0\'54
+\f3 \
+statistics
+\f7 \uc0\u8202 
+\f3 \'97
+\f7 \uc0\u8202 
+\f2 \'c6\'5b\'ac\'dd\'a6\'b8\'bc\'c6
+\f3  
+\f2 \'ad\'71\'be\'5c\'a4\'48\'bc\'c6\'b5\'a5\'b5\'a5
+\f3 \
+chart=mostPopular
+\f7 \uc0\u8202 
+\f3 \'97
+\f7 \uc0\u8202 
+\f2 \'b9\'4c\'c2\'6f\'b3\'cc\'a8\'fc\'c5\'77\'aa\'ef\'aa\'ba\'bc\'76\'a4\'f9
+\f3 \
+maxResults=
+\f2 \'c5\'dc\'bc\'c6
+\f7 \uc0\u8202 
+\f3 \'97
+\f7 \uc0\u8202 
+\f2 \'b3\'cc\'a4\'6a\'c5\'e3\'a5\'dc\'aa\'ba\'bc\'c6\'b6\'71\'a5\'69\'a6\'db\'a6\'e6\'a9\'77\'b8\'71\'c5\'dc\'bc\'c6\'a4\'5d\'a5\'69\'aa\'bd\'b1\'b5\'a9\'77\'b8\'71
+\f3 20\
+https://developers.google.com/youtube/v3/docs/videos/list\
+\
+
+\f2 \'b1\'b5\'b5\'db\'a7\'da\'ad\'cc\'b3\'73\'b5\'b2\'a6\'6e\'a4\'46\'a4\'a7\'ab\'e1\'a1\'41\'b4\'4e\'a8\'d3\'b6\'7d\'a9\'6c\'a7\'ec\'b8\'ea\'ae\'c6\'a7\'61
+\f3 !\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 let
+\f5\b0  task = URLSession.shared.dataTask(with: URLRequest(url: url)) \{ data, _, error 
+\f4\b in
+\f5\b0 \
+
+\f4\b guard
+\f5\b0  
+\f4\b let
+\f5\b0  data = data, error == 
+\f4\b nil
+\f5\b0  
+\f4\b else
+\f5\b0  \{\
+
+\f4\b return
+\f5\b0 \
+\}\
+
+\f4\b do
+\f5\b0  \{\
+
+\f4\b let
+\f5\b0  printJson = 
+\f4\b try
+\f5\b0  JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)\
+print(printJson)\
+
+\f4\b let
+\f5\b0  results = 
+\f4\b try
+\f5\b0  JSONDecoder().decode(YoutubePopularVideosStruck.self, from: data)\
+completion(.success(results.items))\
+\}\
+
+\f4\b catch
+\f5\b0  \{\
+completion(.failure(YoutubeCatchDataError.getVideos))\
+\}\
+\}\
+task.resume()\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'a7\'da\'ad\'cc\'a5\'69\'a5\'48\'a5\'fd\'a5\'ce\'a4\'55\'ad\'b1\'b5\'7b\'a6\'a1\'bd\'58\'a8\'d3
+\f3 print
+\f2 \'a9\'d2\'a6\'b3\'aa\'ba\'b8\'ea\'ae\'c6\'a6\'62\'b6\'69\'a6\'e6\'ab\'d8\'ba\'63
+\f3 struct
+\f2 \'ab\'ac\'ba\'41
+\f3 ~~\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 let
+\f5\b0  printJson = 
+\f4\b try
+\f5\b0  JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'ab\'d8\'ba\'63
+\f1\b \strokec2 struct 
+\f0 \'a7\'e2\'bb\'dd\'ad\'6e\'aa\'ba\'b8\'ea\'ae\'c6\'a7\'ec\'a8\'fa\'a5\'58\'a8\'d3\'b4\'4e\'a6\'6e\'a4\'a3\'a5\'ce\'a5\'fe\'b3\'a1\'a7\'ec
+\f1 (
+\f0 \'aa\'60\'b7\'4e\'a4\'a3\'ac\'4f\'a8\'43\'b5\'a7\'b8\'ea\'ae\'c6\'b3\'a3\'ac\'4f\'b7\'7c\'a6\'b3\'aa\'ba\'a9\'d2\'a5\'48\'a6\'b3\'a8\'c7\'ad\'6e\'bc\'67
+\f1 optional
+\f0 \'b7\'7c\'a4\'f1\'b8\'fb\'a6\'77\'a5\'fe\'a1\'41\'a6\'6e\'a4\'f1\'bb\'a1\'a1\'47\'ad\'71\'be\'5c\'bc\'c6\'a6\'62\'a9\'78\'a4\'e8\'ba\'dd\'a5\'69\'a5\'48\'bf\'ef\'be\'dc\'c3\'f6\'b3\'ac\'a1\'41\'a6\'b9\'ae\'c9
+\f3\b0 \strokec2 statistics
+\f2 \'b8\'cc\'ad\'b1\'aa\'ba
+\f3 subscriberCount
+\f2 \'a5\'b2\'b6\'b7\'b4\'4e\'b1\'6f\'b3\'5d\'ac\'b0\'a5\'69\'bf\'ef
+\f1\b \strokec2 )
+\f3\b0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 struct
+\f5\b0  YoutubeVideosStruck: Codable \{\
+
+\f4\b let
+\f5\b0  items: [YoutubeVideosStruckItem]\
+\}\
+\
+
+\f4\b struct
+\f5\b0  YoutubeVideosStruckItem: Codable \{\
+
+\f4\b let
+\f5\b0  statistics: YoutubeVideosStruckStatistics\
+\}\
+\
+
+\f4\b struct
+\f5\b0  YoutubeVideosStruckStatistics: Codable \{\
+
+\f4\b let
+\f5\b0  commentCount: String\
+
+\f4\b let
+\f5\b0  favoriteCount: String\
+
+\f4\b let
+\f5\b0  likeCount: String\
+
+\f4\b let
+\f5\b0  viewCount: String\
+\}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'a6\'6e\'a4\'46\'a4\'a7\'ab\'e1\'b4\'4e\'a5\'69\'a5\'48\'a6\'5e\'b6\'c7\'a7\'da\'ad\'cc\'aa\'ba\'b8\'ea\'ae\'c6\'b0\'d5
+\f3 (
+\f2 \'a7\'da\'b3\'6f\'c3\'e4\'aa\'ba\'a6\'5e\'b6\'c7\'ac\'4f\'bc\'67
+\f3 (Result<[YoutubePopularVideosStruckItem], Error>) -> Void))\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs26 \cf0 \strokec2 let
+\f5\b0  results = 
+\f4\b try
+\f5\b0  JSONDecoder().decode(YoutubeSearchStruck.self, from: data)\
+completion(.success(results.items))\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'a4\'a7\'ab\'e1\'a6\'41\'a7\'e2\'b1\'6f\'a8\'ec\'a5\'58\'a8\'d3\'aa\'ba\'b8\'ea\'ae\'c6\'a9\'f1\'b6\'69
+\f3 UI
+\f2 \'b8\'cc\'ad\'b1\'b4\'4e\'a4\'6a\'a5\'5c\'a7\'69\'a6\'a8\'a4\'46\'a1\'41\'a6\'70\'aa\'47\'a6\'b3\'ad\'6e\'c5\'dc\'a7\'f3
+\f3 UI
+\f2 \'a4\'b8\'a5\'f3\'aa\'ba\'ad\'c8\'a1\'41\'b4\'4e\'a5\'b2\'b6\'b7\'a6\'62\'a5\'44\'bd\'75\'b5\'7b\'a4\'57\'b0\'f5\'a6\'e6\'a9\'d2\'a5\'48\'a7\'da\'ad\'cc\'a5\'b2\'b6\'b7\'a5\'5b\'a4\'57
+\f3 DispatchQueue.main.async\
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \strokec2 YoutubeCatchData.shared.getVideo(videoID: videoID) \{ [
+\f4\b weak
+\f5\b0  
+\f4\b self
+\f5\b0 ] result 
+\f4\b in
+\f5\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b \cf0 switch
+\f5\b0  result \{\
+
+\f4\b case
+\f5\b0  .success(
+\f4\b let
+\f5\b0  data):\
+DispatchQueue.main.async \{\
+self?.data = data\
+self?.tableView.reloadData()\
+\}\
+
+\f4\b case
+\f5\b0  .failure(
+\f4\b let
+\f5\b0  error):\
+print(error.localizedDescription)\
+\}\
+\}\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\fs24 \cf0 \strokec2 \'aa\'fc\'d8\'70\'a4\'40\'bc\'cb\'a5\'fe\'b5\'7b\'b3\'a3\'ac\'4f\'a5\'ce\'b5\'7b\'a6\'a1\'bd\'73\'c4\'b6\'a5\'58\'a8\'d3\'aa\'ba\'a6\'70\'aa\'47\'a4\'a3\'aa\'be\'b9\'44\'ab\'e7\'bb\'f2\'a5\'ce\'a5\'4e\'bd\'58\'a5\'68\'a7\'65\'b2\'7b
+\f3 tableView
+\f2 \'aa\'ba\'b8\'dc\'a5\'69\'a5\'48\'b0\'d1\'a6\'d2\'b3\'6f\'bd\'67
+\f3 :\
+https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%88%A9%E7%94%A8%E7%A8%8B%E5%BC%8F%E5%AE%A2%E8%A3%BD%E5%8C%96tableview-cell-no-storyboard-4dc282babdd4\
+}
